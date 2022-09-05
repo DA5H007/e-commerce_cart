@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/style.css" rel="stylesheet">
+    <link rel="icon" href="./img/favicon.ico">
+    <title>DASH E-commerce
+    </title>
+</head>
+
+<body class=" text-center bg-gradient-to-r from-slate-50 to-slate-200">
+
+    <header class="py-2 mb-20 px-4 sm:px-10 bg-slate-700">
+        <!-- NAVBAR -->
+        <nav>
+            <ul
+                class="flex justify-between items-center text-slate-50 text-lg tracking-widest sm:text-2xl">
+                <li><img class="w-12 sm:w-20" src="./img/logo.png" alt="Brand Logo"></li>
+                <li class="">
+                    <a class="mx-2 sm:mx-5 hover:border-b-2 duration-300"
+                        href="#cart">Cart</a>
+                    <a class="mx-2 sm:mx-5 hover:border-b-2 duration-300"
+                        href="#footer">Links</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="products">
+            <!-- PRODUCTS -->
+            <h1 class="text-slate-600 text-6xl">Products</h1>
+
+            <!-- ALL PRODUCTS INSIDE THIS DIV  -->
+            <div class="p-10 md:p-16 lg:p-28 products py-20 border-b-2 border-slate-900 
+                 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-16">
+                <div class="product">
+                    <img class="product-img" src="./img/chair.jpg"
+                        alt="chair" />
+                    <div class="flex justify-center items-center gap-10 my-2">
+                        <h3 class='product-title'>Chair</h3>
+                        <p class='product-price'>₹3000</p>
+                    </div>
+                    <button class="product-add">Add To Cart</button>
+                </div>
+                <div class="product">
+                    <img class="product-img" src="./img/sofa.jpg" alt="chair" />
+                    <div class="flex justify-center items-center gap-10 my-2">
+                        <h3 class='product-title'>Sofa</h3>
+                        <p class='product-price'>₹2000</p>
+                    </div>
+                    <button class="product-add">Add To Cart</button>
+                </div>
+                <div class="product">
+                    <img class="product-img" src="./img/table.jpg"
+                        alt="chair" />
+                    <div class="flex justify-center items-center gap-10 my-2">
+                        <h3 class='product-title'>Table</h3>
+                        <p class='product-price'>₹2600</p>
+                    </div>
+                    <button class="product-add">Add To Cart</button>
+                </div>
+                <div class="product">
+                    <img class="product-img" src="./img/laptop.jpg"
+                        alt="chair" />
+                    <div class="flex justify-center items-center gap-10 my-2">
+                        <h3 class='product-title'>Laptop</h3>
+                        <p class='product-price'>₹38000</p>
+                    </div>
+                    <button class="product-add">Add To Cart</button>
+                </div>
+                <div class="product">
+                    <img class="product-img" src="./img/mouse.jpg"
+                        alt="chair" />
+                    <div class="flex justify-center items-center gap-10 my-2">
+                        <h3 class='product-title'>Mouse</h3>
+                        <p class='product-price'>₹900</p>
+                    </div>
+                    <button class="product-add">Add To Cart</button>
+                </div>
+                <div class="product">
+                    <img class="product-img" src="./img/keyboard.jpg"
+                        alt="chair" />
+                    <div class="flex justify-center items-center gap-10 my-2">
+                        <h3 class='product-title'>Keyboard
+                        </h3>
+                        <p class='product-price'>₹600</p>
+                    </div>
+                    <button class="product-add">Add To Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- CART   -->
+        <section>
+            <h1 class="text-slate-600 text-6xl my-16">Cart</h1>
+            <div class="p-5 sm:px-16 md:px-32 lg:px-40">
+                <div
+                    class="flex gap-1 justify-between text-base sm:text-2xl my-2">
+                    <h3 class=" w-4/12 border-slate-700 border-b-2 py-2">ITEM
+                    </h3>
+                    <h3 class=" w-3/12 border-slate-700 border-b-2 py-2">PRICE
+                    </h3>
+                    <h3 class=" w-4/12 border-slate-700 border-b-2 py-2">
+                        QUANTITY
+                    </h3>
+                </div>
+
+                <!-- ALL CART ITEMS INSIDE THIS DIV -->
+                <div id="cart">
+                    <!-- JS WILL CREATE CART ITEMS HERE -->
+                </div>
+
+                <!-- REPRESENT TOTAL VALUE -->
+                <h3 class="total text-2xl my-16 text-right">Total ₹0</h3>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer"
+        class="py-8 px-10 bg-slate-700 text-slate-50 flex justify-center items-center">
+        <p>Copyright © 2022 Dash Inc</p>
+        <a href="#products" class="hover:border-b-2 ml-16">Products</a>
+        <a href="https://github.com/DA5H007" target="_blank">
+            <img src="./img/github.svg" class="w-10 mx-4" alt="GitHub">
+        </a>
+        <a href="https://www.linkedin.com/in/shivansh-tyagi-192733210/" target="_blank">
+            <img src="./img/linkedin.svg" class="w-10" alt="Linkedin">
+        </a>
+    </footer>
+
+    <!-- JS FILE -->
+    <script src="index.js"></script>
+</body>
+
+</html>

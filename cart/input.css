@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* GOOGLE FONTS
+font-family: 'Dancing Script', cursive;
+font-family: 'Lato', sans-serif;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lato:wght@300;400&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+}
+
+@layer components {
+    /* CSS FOR INDIVIDUAL PRODUCT */
+    .product {
+        @apply border-2 border-slate-300 pb-5 shadow-2xl
+    }
+
+    .product-img {
+        @apply shadow-md transform hover:scale-100 scale-95 overflow-hidden -z-10 blur-[1px] hover:blur-none duration-300
+    }
+
+    .product-title {
+        @apply text-blue-700 text-3xl
+    }
+
+    .product-price {
+        @apply text-lg
+    }
+
+    .product-add {
+        @apply bg-blue-500 text-slate-50 hover:bg-slate-200 hover:text-blue-500 border-2
+        border-blue-500 w-28 h-8 rounded-full duration-300 my-2
+    }
+}
